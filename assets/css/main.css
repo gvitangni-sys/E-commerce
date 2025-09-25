@@ -21898,3 +21898,24 @@ product all slider
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.tp-shop-widget-guarantees {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tp-shop-widget-guarantee-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* Cache les éléments trop explicites */
+.tp-shop-widget-checkbox-circle-list {
+  display: none;
+}
