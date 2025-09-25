@@ -18,22 +18,22 @@ class UrDesireProfile {
   }
 
   // Vérifier l'authentification
-  // checkAuthentication() {
-  //   // Vérifier si le système d'auth existe
-  //   if (typeof UrDesireAuth === "undefined") {
-  //     console.error("Système d'authentification non chargé");
-  //     window.location.href = "login.html";
-  //     return;
-  //   }
+  checkAuthentication() {
+    // Vérifier si le système d'auth existe
+    if (typeof UrDesireAuth === "undefined") {
+      console.error("Système d'authentification non chargé");
+      window.location.href = "login.html";
+      return;
+    }
 
-  //   const authSystem = new UrDesireAuth();
-  //   this.currentUser = authSystem.getCurrentUser();
+    const authSystem = new UrDesireAuth();
+    this.currentUser = authSystem.getCurrentUser();
 
-  //   if (!this.currentUser) {
-  //     window.location.href = "login.html";
-  //     return;
-  //   }
-  // }
+    if (!this.currentUser) {
+      window.location.href = "login.html";
+      return;
+    }
+  }
 
   // Charger les données utilisateur
   loadUserData() {
